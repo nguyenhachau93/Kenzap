@@ -5,12 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
-    <h1 class="text-4xl font-bold underline">
-        Hello world!
-    </h1>
+    <div class="header bg-[#f8f8f8]">
+        <div class="xl:container mx-auto flex justify-between py-7">
+            <div class="logo flex items-center">
+                <img src="../image/logo_homepage.jpg">
+            </div>
+            <ul class="flex items-center w-[70%] justify-between">
+                <li><a class="text-base text-transform: uppercase font-openSans font-semibold" href="#">products</a>
+                </li>
+                <li><a class="text-base text-transform: uppercase font-openSans font-semibold" href="#">pricing</a></li>
+                <li><a class="text-base text-transform: uppercase font-openSans font-semibold" href="#">about</a></li>
+                <li><a class="text-base text-transform: uppercase font-openSans font-semibold" href="#">contact</a></li>
+                <li><a class="text-base text-transform: uppercase font-openSans font-semibold" href="#">help</a></li>
+                <li>
+                    <button class="border-2 py-3 px-7 rounded-md text-base text-transform: uppercase font-openSans font-semibold text-[#9376df]
+                        hover:bg-[#8a6cda] hover:text-white">
+                        create now
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="xl:container mx-auto ">
+            <p class="font-openSans font-regular text-[3.5rem] w-[50%]">Create Professional Looking Website</p>
+            <p class="font-openSans text-[#6b6b6b] text-lg w-96">With lastest design trends and technologies simply be
+                the first on the market</p>
+            <div class="flex">
+                <div class="group dropdown relative inline-block">
+                    <button class="dropbtn flex items-center">
+                        <p>Select Website Category</p>
+                        <i class="las la-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content hidden absolute z-10 group-hover:block">
+                        <a class="block" href="#">Link 1</a>
+                        <a class="block" href="#">Link 2</a>
+                        <a class="block" href="#">Link 3</a>
+                    </div>
+                </div>
+                <button class="border-2 py-3 px-7 rounded-md text-base text-transform: uppercase font-openSans font-semibold text-[#9376df] 
+                        hover:bg-[#8a6cda] hover:text-white">
+                    create now
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
