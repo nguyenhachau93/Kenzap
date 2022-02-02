@@ -540,8 +540,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.bottom-0{
-  bottom: 0px;
+.right-0{
+  right: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.bottom-\[-46px\]{
+  bottom: -46px;
 }
 
 .z-10{
@@ -553,49 +561,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.ml-4{
-  margin-left: 1rem;
-}
-
-.mr-4{
-  margin-right: 1rem;
-}
-
-.mr-5{
-  margin-right: 1.25rem;
-}
-
-.mr-9{
-  margin-right: 2.25rem;
-}
-
-.ml-9{
-  margin-left: 2.25rem;
-}
-
-.ml-7{
-  margin-left: 1.75rem;
-}
-
-.mr-10{
-  margin-right: 2.5rem;
-}
-
-.mr-12{
-  margin-right: 3rem;
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .mr-14{
   margin-right: 3.5rem;
 }
 
-.mt-9{
-  margin-top: 2.25rem;
+.mb-\[7rem\]{
+  margin-bottom: 7rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mt-\[6rem\]{
+  margin-top: 6rem;
 }
 
 .block{
@@ -608,6 +591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex{
   display: flex;
+}
+
+.table{
+  display: table;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -630,24 +621,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 24rem;
 }
 
-.w-\[40\%\]{
-  width: 40%;
-}
-
-.w-\[45\%\]{
-  width: 45%;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
 .w-\[47\%\]{
   width: 47%;
 }
 
+.w-\[28\.9rem\]{
+  width: 28.9rem;
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -658,8 +649,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
+.gap-x-1{
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
+.gap-y-10{
+  row-gap: 2.5rem;
+}
+
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .border-2{
@@ -669,6 +673,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#f8f8f8\]{
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fbfbfb\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
 }
 
 .py-7{
@@ -686,19 +700,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.75rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-9{
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
 }
 
 .py-4{
@@ -706,12 +710,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
-.pt-3{
-  padding-top: 0.75rem;
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-40{
@@ -720,6 +731,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-60{
   padding-bottom: 15rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.pt-\[10rem\]{
+  padding-top: 10rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-openSans{
@@ -745,20 +768,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .uppercase{
   text-transform: uppercase;
 }
 
-.leading-6{
-  line-height: 1.5rem;
-}
-
-.leading-10{
-  line-height: 2.5rem;
+.capitalize{
+  text-transform: capitalize;
 }
 
 .text-\[\#9376df\]{
@@ -774,6 +807,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#909090\]{
   --tw-text-opacity: 1;
   color: rgb(144 144 144 / var(--tw-text-opacity));
+}
+
+.text-violet-600{
+  --tw-text-opacity: 1;
+  color: rgb(124 58 237 / var(--tw-text-opacity));
+}
+
+.element-active {
+  background: white;
 }
 
 .hover\:bg-\[\#8a6cda\]:hover{
